@@ -1,0 +1,269 @@
+/* ===================
+Estilos
+   ===================*/
+ html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ol,ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea,textarea:hover,textarea:focus,input[type="button"],input[type="button"]:hover,input[type="button"]:focus {
+  background: inherit;
+  border:  none;
+  color:  inherit;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ===================
+       Fuentes y fondo
+   ===================*/
+
+@font-face {
+  font-family:  'Inter';
+  src: url('../font/foodica.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family:  'Inter';
+  src: url('../font/foodica.ttf');
+  font-weight: bold;
+}
+
+html {
+  font-family:  'Inter', sans-serif;
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+/* ===================
+      Estilos Principales
+   ===================*/
+
+.main {
+  min-height: 75vh;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex-column {
+  flex-direction: column;
+}
+
+.display-flex-row {
+  flex-direction: row;
+}
+
+.flex-grow-s {
+  flex-grow: 1;
+}
+
+/* ===================
+      Botones y clases
+   ===================*/
+
+
+#texto {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 100%;
+  margin: 2rem;
+  color: #0a3871;
+}
+
+::placeholder {
+  color: #7387a4;
+}
+
+.main2 {
+  padding: 1.5rem;
+}
+
+header {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.ad {
+  height: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input.button {
+  color: #0A3871;
+  border: solid 1px #0A3871;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem 0px;
+  cursor: pointer;
+}
+
+input.button:hover,
+input.button:focus {
+  background-color: #0A3871;
+  color: #fff;
+  border: solid 1px #000;
+}
+
+.area2 {
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: calc(25vh - 2rem);
+  color: #495057;
+}
+
+.ct1 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.informacion {
+  text-align: center;
+}
+
+.icon-informacion {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background: url('../img/exclamation.png');
+  margin: 0px 0.5rem;
+}
+
+.txt strong{
+  color: #343A40;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.area2 {
+  position: relative;
+}
+
+/*.area2 .button {
+  position: absolute;
+  visibility: hidden;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}*/
+
+.area2.main2-exit .button {
+  visibility: visible;
+}
+
+.area2.main2-exit .informacion {
+  display:  none;
+}
+
+#exit {
+  font-size: 1.5rem;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-y: auto;
+}
+
+/* ===================
+       Estilos para Pc
+   ===================*/
+   @media only screen and (min-width: 768px) {
+    .display-md-flex {
+      display:  flex;
+    }
+  
+    .display-md-block {
+      display: block;
+    }
+  
+    .display-flex-md-column {
+      flex-direction: column;
+    }
+  
+    .display-flex-md-row {
+      flex-direction: row;
+    }
+  
+    .display-flex-md-grow {
+      flex-grow: 1;
+    }
+  
+    .main {
+      width: 70%;
+    }
+  
+    .area2{
+      width: 30%;
+    }
+  
+    body {
+      height: 100vh;
+    }
+  }
+  
+
+/* ===================
+       estilos para dispotivos de 375 px
+   ===================*/
+@media only screen and (min-width: 375px) {
+  .display-sm-flex {
+    display:  flex;
+  }
+
+  .display-flex-sm-column {
+    flex-direction: column;
+  }
+
+  .display-flex-sm-row {
+    flex-direction: row;
+  }
+
+  .display-flex-sm-grow {
+    flex-grow: 1;
+  }
+
+  input.button {
+    border-radius: 1rem;
+    margin: 0px 1rem;
+  }
+
+}

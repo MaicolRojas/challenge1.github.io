@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Challenge1 - Oracle Next Education</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="display-md-flex display-flex-md-row">
+<div class="main display-flex display-flex-column">
+  <header>
+    <img src="assets/img/logo.svg" class="logo"/>
+  </header>
+  <div class="display-flex display-flex-column flex-grow-s">
+    <textarea id="texto" class="flex-grow-s" placeholder="Ingrese el texto aquí"></textarea>
+  </div>
+  <div class="main2">
+  <div class="ad display-flex">
+    <span class="icon-informacion"></span><small>Solo letras minúsculas y Mayuculas pero sin acentos</small>
+  </div>
+  <div class="display-flex display-flex-column display-flex-sm-row">
+    <input type="button" class="button display-flex-sm-grow" value="Codificar" onclick="encriptar()"/>
+    <input type="button" class="button display-flex-sm-grow" value="Decodificar" onclick="desencriptar()"/>
+  </div>
+  </div>
+</div>
+<div class="area2 display-flex display-flex-column">
+  <div class="informacion display-flex display-flex-column flex-grow-s">
+    <div class="display-none display-md-block">
+    <img src="assets/img/muñeco.svg" />
+    </div>
+    <div class="txt ct1">
+      <strong>Ningún mensaje fue encontrado</strong><br />
+      <span>Ingresa el texto que desees codificar o decodificar</span>
+    </div>
+  </div>
+  <div id="exit"></div>
+  <div class="msg"></div>
+  <input type="button" class="button copiar" onclick="copiar()" value="copiar"  />
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
